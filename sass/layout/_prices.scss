@@ -4,8 +4,10 @@
 .prices-list {
   display: flex;
 }
-.prices-picture:not(:last-child) {
-  margin-right: 30px;
+.prices-picture {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 .product-activity {
   position: relative;

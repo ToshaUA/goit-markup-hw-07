@@ -5,13 +5,14 @@
 .price-list-titel {
   margin-right: 30px;
   margin-bottom: 30px;
+  &:nth-child(3n) {
+    margin-right: 0px;
+  }
+  &:nth-last-child(-n + 3) {
+    margin-bottom: 0px;
+  }
 }
-.price-list-titel:nth-child(3n) {
-  margin-right: 0px;
-}
-.price-list-titel:nth-last-child(-n + 3) {
-  margin-bottom: 0px;
-}
+
 .price-titils {
   padding: 20px 24px 20px 24px;
   border: 1px solid #ececec;
@@ -21,7 +22,6 @@
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-
   color: var(--price-titile-color);
 }
 .price-after-titil {
@@ -29,7 +29,6 @@
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-
   color: var(--price-after-titile-color);
 }
 .filtr-product {
@@ -38,11 +37,11 @@
 }
 .price-list-titel {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.price-list-titel:focus,
-.price-list-titel:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  &:focus,
+  &:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
 .overlay-card {
   position: relative;
@@ -61,7 +60,7 @@
   height: 100%;
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.price-list-titel:hover .titil-card {
-  transform: translateY(0);
+  .price-list-titel:hover & {
+    transform: translateY(0);
+  }
 }

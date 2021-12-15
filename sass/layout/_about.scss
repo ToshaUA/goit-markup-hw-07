@@ -5,8 +5,10 @@
 .about-list {
   display: flex;
 }
-.about-list-scroll:not(:last-child) {
-  margin-right: 30px;
+.about-list-scroll {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 .footer-logo-left {
   font-family: Raleway;
@@ -15,7 +17,6 @@
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-
   color: var(--accent-color);
 }
 .about-titil {
@@ -25,7 +26,6 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
   color: var(--about-title-coior);
 }
 .about-after-titil {
@@ -33,7 +33,6 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-
   color: var(--second-text-color);
 }
 .icon-antenna {
