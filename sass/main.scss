@@ -3,17 +3,21 @@
 @import './base/common';
 @import './utils/hidden';
 @import './components/section-title';
-
+@import './components/logo';
 @import './components/container';
-
+@import './components/button';
 @import './layout/headers';
 @import './layout/hero';
 @import './layout/about';
-@import './layout/prices';
-@import './layout/command';
-@import './layout/compani';
+@import './layout/preview';
+@import './layout/developers';
+@import './layout/companies';
 @import './layout/footer';
 @import './layout/portfolio-button';
-@import './layout/price';
+@import './layout/product-list';
 @import './components/modal';
 @import './components/current-headers';
+@import './components/social-list';
+@import './utils/cursor-button';
+@import './components/footer-box';
+@import './utils/is-hidden';

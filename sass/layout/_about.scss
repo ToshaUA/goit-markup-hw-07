@@ -5,21 +5,20 @@
 .about-list {
   display: flex;
 }
-.about-list-scroll {
+.about-list__item {
   &:not(:last-child) {
     margin-right: 30px;
   }
 }
-.footer-logo-left {
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: var(--accent-color);
+.about-list__icon {
+  display: flex;
+  background: #f5f4fa;
+  border-radius: 4px;
+  align-items: center;
+  padding: 25px 100px 25px 100px;
+  margin-bottom: 30px;
 }
-.about-titil {
+.about-list__titil {
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -28,18 +27,10 @@
   text-transform: uppercase;
   color: var(--about-title-coior);
 }
-.about-after-titil {
+.about-list__slogan {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
-}
-.icon-antenna {
-  display: flex;
-  background: #f5f4fa;
-  border-radius: 4px;
-  align-items: center;
-  padding: 25px 100px 25px 100px;
-  margin-bottom: 30px;
 }

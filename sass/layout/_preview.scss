@@ -1,18 +1,18 @@
-.prices {
+.preview {
   padding-bottom: 94px;
 }
-.prices-list {
+.preview-list {
   display: flex;
 }
-.prices-picture {
+.preview-list__activity {
   &:not(:last-child) {
     margin-right: 30px;
   }
 }
-.product-activity {
+.preview-list__picture {
   position: relative;
 }
-.product-activity-titel {
+.preview-list__titel {
   display: flex;
   align-items: center;
   justify-content: center;

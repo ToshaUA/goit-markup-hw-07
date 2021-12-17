@@ -1,18 +1,18 @@
-.main-price {
+.product {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.main-button-list {
+.product-button-list {
   display: flex;
   justify-content: center;
   margin-bottom: 54px;
 }
-.main-button-item {
+.product-button-list__item {
   &:not(:last-child) {
     margin-right: 8px;
   }
 }
-.main-button-titel {
+.product-button-list__titel {
   padding: 6px 22px 6px 22px;
   min-width: 73px;
   border-radius: 4px;
@@ -34,7 +34,4 @@
       0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
   }
-}
-.cursor-button {
-  cursor: pointer;
 }
